@@ -24,10 +24,24 @@ To deploy this project, follow these steps:
    ```bash
    docker build -t wingie-basic .
    ```
+2.1 Or pull the container from Docker Hub:
+   ```bash
+docker pull sannjo/my-fastapi-app:latest
+   ```
 3. Run the Docker container:
    ```bash
    docker run -d -p 80:80 wingie-basic
    ```
+3.1 In case you've pulled from the hub run via:
+   ```bash
+podman run -d --name my-fastapi-app -p 8000:8000 sannjo/my-fastapi-app:latest
+
+   ```
+or
+   ```bash
+docker run -d --name my-fastapi-app -p 8000:8000 sannjo/my-fastapi-app:latest
+   ```
+
 
 ## Infrastructure Setup
 
