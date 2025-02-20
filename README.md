@@ -32,12 +32,12 @@ docker pull sannjo/my-fastapi-app:latest
    ```bash
    docker run -d -p 80:80 wingie-basic
    ```
-3.1 In case you've pulled from the hub run via:
+3.1 In case you've pulled from the hub run via Podman:
    ```bash
 podman run -d --name my-fastapi-app -p 8000:8000 sannjo/my-fastapi-app:latest
 
    ```
-or
+or pulled from the hub and run via Docker
    ```bash
 docker run -d --name my-fastapi-app -p 8000:8000 sannjo/my-fastapi-app:latest
    ```
