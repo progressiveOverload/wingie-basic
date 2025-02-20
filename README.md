@@ -30,7 +30,7 @@ docker pull sannjo/my-fastapi-app:latest
    ```
 3. Run the Docker container:
    ```bash
-   docker run -d -p 80:80 wingie-basic
+   docker run -d -p 8000:8000 wingie-basic
    ```
 3.1 In case you've pulled from the hub run via Podman:
    ```bash
